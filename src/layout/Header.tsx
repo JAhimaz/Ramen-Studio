@@ -1,5 +1,12 @@
 import styled from "@emotion/styled"
+import { keyframes } from '@emotion/react'
 import { ReactComponent as Logo } from "@assets/logo.svg"
+
+const spin = keyframes`
+  to {
+    transform: rotate(360deg);
+  }
+`
 
 const Header = () => {
   return (
@@ -12,6 +19,11 @@ const Header = () => {
         <Logo css={{
           width: "3em",
           height: "auto",
+
+          // On hover spin 360deg
+          "&:hover": {
+            animation: `${spin} 3s linear infinite`,
+          },
         }} />
         <article css={{
           display: "flex",
@@ -36,7 +48,6 @@ const Header = () => {
           </span>
         </article>
       </div>
-      
     </Navigation>
   )
 }

@@ -27,6 +27,8 @@
       "@assets/*": ["src/assets/*"],
       "@layouts": ["src/layout/"],
       "@layouts/*": ["src/layout/*"],
+      "@libs": ["src/libs/"],
+      "@libs/*": ["src/libs/*"],
     }
   },
   "include": ["src"],

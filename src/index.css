@@ -11,11 +11,11 @@
   -webkit-text-size-adjust: 100%;
 
   /* create variable */
-  --color-primary: #FFAC33;
+  --color-primary: rgb(255, 172, 51);
+  --color-secondary: #6A6A6A;
 }
 
-
-body {
+html, body, #root {
   margin: 0;
   height: 100%;
 }
