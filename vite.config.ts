@@ -6,5 +6,6 @@ import svgr from 'vite-plugin-svgr';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react({ jsxImportSource: '@emotion/react' }), viteTsconfigPaths(), svgr()],
-  esbuild: { jsx: 'automatic' }
+  esbuild: { jsx: 'automatic' },
+  base: '/Ramen-Studio/'
 })
